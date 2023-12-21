@@ -1,0 +1,125 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  /* Para ocupar toda la ventana del navegador */
+  background-image: url('Misfotos/cine.jpeg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
+  background-size: cover; /* Para que la imagen se ajuste al tamaño del contenedor */
+  background-attachment: fixed; /* Para fijar la imagen de fondo */
+}
+
+
+
+  
+.contenedor0 {
+    /* Estilos para el contenido de la página */
+    padding: 20px;
+    color: white; /* Color del texto para que se vea en contraste con la imagen */
+  }
+
+.centro{
+    position: absolute;
+    top: 60%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+}
+
+
+#titulo {  /* CATALOGO DE PELICULAS */
+  text-align: center;
+  color:rgb(218, 23, 23);
+  font-size: 60px;
+  transform: perspective(300px) rotateX(20deg);
+  text-shadow: 1px 1px 0px #fff, 2px 2px 0px #fff, 3px 3px 0px #fff, 4px 4px 0px #fff, 5px 5px 10px rgba(0,0,0,0.3);
+}
+  
+  
+ #subTitulo1{  /* INGRESE SU EDAD + INPUT/CLICK */
+
+    color:rgb(233, 21, 21);
+    margin-top:100px; /* espacio de arriba*/
+    font-size: 46px;
+    text-shadow: 1px 1px 0px #ccc, 2px 2px 0px #ccc, 3px 3px 0px #ccc, 4px 4px 0px #ccc, 5px 5px 10px rgba(0,0,0,0.3);
+  }
+
+  .input-largo {
+    width: 20%; /* Puedes ajustar este valor según lo largo que desees el input */
+    background-color:gray;
+  }
+  
+  .click{
+    background-color:gray;
+  
+  }
+
+
+
+  #subTitulo2{ /* SELECCIONE EL GÉNERO + BOTONES */
+
+    color:rgb(233, 21, 21);
+    font-size: 44px;
+    text-shadow: 1px 1px 0px #ccc, 2px 2px 0px #ccc, 3px 3px 0px #ccc, 4px 4px 0px #ccc, 5px 5px 10px rgba(0,0,0,0.3);
+  }
+
+  .contenedor {
+    display: flex;
+    gap: 30px; /* Espacio entre botones */
+    justify-content: flex-start; /* Alinea los elementos al principio (izquierda) */
+    margin-left: -120px; 
+
+  }
+
+  .contenedor2 {
+    display: flex;
+    gap: 30px; /* Espacio entre botones */
+    justify-content: flex-start; /* Alinea los elementos al principio (izquierda) */
+    margin-left: -120px;
+
+  }
+
+.miBoton{
+
+  font-size: 20px; /* Cambia el tamaño del texto del botón */
+  padding: 20px 30px; /* Ajusta el tamaño del área de clic del botón */
+  border-radius: 50%;
+  background-color:gray;
+}
+
+#mensaje {
+  position: fixed;
+  top: 50%;
+  left: 30%; /* Ajusta este valor para mover el cuadro más a la izquierda */
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  max-width: 80%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  text-align: center;
+}
+
+
+#mensaje h1 {
+  color: white;
+  font-size: 3em;
+  /* No es necesario el texto centrado aquí si ya se aplica al contenedor */
+}
+
+.boton-reinicio {
+  margin-top: 20px; /* Ajusta el espacio entre el texto y el botón */
+  padding: 10px 18px; /* Ajusta el tamaño del botón */
+  font-size: 18px; /* Tamaño del texto del botón */
+  background-color: #fff; /* Cambia el color del botón si es necesario */
+  color: #000; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Clase para ocultar el mensaje por defecto */
+.oculto {
+  display: none;
+}

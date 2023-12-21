@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectorPelis</title>
+    
+    <script src="misArchivos.js"></script>
+    <link rel="stylesheet" href="../misEstilos.css">
+</head>
+<body>
+
+<div class="contenedor0"> <!--CONTENEDOR0-->
+    <br>
+    
+    <h1 id="titulo"><u>Selector de Películas</u></h1>
+
+    
+ <div class="centro"><!--CENTRO-->
+
+    <div id="mensaje" class="oculto" >
+        <h1 id="nombrePelicula"></h1>
+        <button onclick="reiniciarPagina()" class="boton-reinicio">Cambiar Selección</button>
+    </div>
+     
+
+    <h2 id="subTitulo1"><u>Ingrese su edad</u></h2>
+    <input id="numeroEdad" type="number" min=4 max=90 class="input-largo"> 
+    <button onclick="consultarPeli()" class="click">CLICK</button>
+
+
+
+
+    <br><br>
+    <h2 id="subTitulo2"><u>Seleccione el género</u></h2>
+
+    <br>
+
+
+    <ol>
+       <div class="contenedor">
+       <li><button id="comedia" onclick="consultarPelis()" class="miBoton">COMEDIA</button></li>
+       <img src="Misfotos/Comedia.jpg" 
+       class="imagen-redonda" 
+       alt="Imagen Redonda" 
+       width="8%"
+       >
+
+
+
+       <li><button id="drama" class="miBoton" onclick="consultarPelis()" >DRAMA</button></li>
+       <img src="Misfotos/Drama.png" 
+       class="imagen-redonda" 
+       alt="Imagen Redonda" 
+       width="8%"
+       >
+
+      </div>
+      <br><br>
+
+      <div class="contenedor2">
+       <li><button id="musical" class="miBoton" onclick="consultarPelis()" >MUSICAL</button></li>
+       <img src="Misfotos/Musical.jpg" 
+       class="imagen-redonda" 
+       alt="Imagen Redonda" 
+       width="8%"
+       > 
+       <li><button id="crimen" class="miBoton" onclick="consultarPelis()" >CRIMEN</button></li>
+       <img src="Misfotos/Crimen.png" 
+       class="imagen-redonda" 
+       alt="Imagen Redonda" 
+       width="8%"
+       >
+       </div>
+    
+    </ol>
+
+
+    
+</div> <!--CENTRO-->
+
+    
+
+  
+</div> <!--CONTENEDOR0-->
+
+
+</body>
+</html>
